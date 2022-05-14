@@ -86,7 +86,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Ruda", sans-serif;
     font-size: 15px;
     font-weight: 400;
     background: top fixed;
@@ -265,7 +265,7 @@ header .logo-scroll {
 
 header .logo,
 header .logo-2 {
-    font-family: "Montserrat";
+    font-family: "Roboto Slab";
     color: #44566c;
     font-size: 40px;
     font-weight: 300;
