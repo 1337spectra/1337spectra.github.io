@@ -56,6 +56,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url("https://use.typekit.net/ynf8xat.css");
+@import url("https://use.typekit.net/lih5sne.css");
 
 
 /* ================================================== */
@@ -78,6 +79,16 @@
 
 /* ================================================== */
 
+* {
+    --font-body: "proxima-nova", sans-serif;
+    --font1: "p22-underground-pc", sans-serif;
+    --font2: "Parisienne", cursive;
+    --font3: "neuzeit-grotesk", sans-serif;
+    --font4: "jaf-domus-titling-web", sans-serif;
+    --font5: "Miama", cursive;
+    --font6: "Georgia", serif;
+}
+
 html {
     overflow-x: hidden;
     padding: 0 !important;
@@ -86,7 +97,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--font-body);
     font-size: 15px;
     font-weight: 400;
     background: top fixed;
@@ -265,7 +276,7 @@ header .logo-scroll {
 
 header .logo,
 header .logo-2 {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     color: #44566c;
     font-size: 40px;
     font-weight: 300;
@@ -438,7 +449,7 @@ header.de_header_2.smaller .info {
     margin: 0;
     float: none;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: var(--font1);
     letter-spacing: 5px;
     font-size: 14px;
     padding: 0;
@@ -504,7 +515,7 @@ header.de_header_2.smaller .info {
 }
 
 #subheader h2.s2 {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 84px;
     font-weight: lighter !important;
 }
@@ -569,7 +580,7 @@ header.de_header_2.smaller .info {
 
 #mainmenu {
 	display:inline-block;
-    font-family: "neuzeit-grotesk";
+    font-family: var(--font3);
     font-size: 11px;
     font-weight: bold;
 	margin-top:-10px;
@@ -2335,7 +2346,7 @@ a.btn-custom,
 .btn-custom,
 a.btn-slider,
 .btn-slider {
-    font-family: "Open Sans";
+    font-family: var(--font4);
     font-size: 12px;
     min-width: 120px;
 }
@@ -2355,7 +2366,7 @@ a.btn-border {
     border-radius: 30px;
     padding: 9px 30px 9px 30px;
     color: #fff;
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-weight: bold;
     font-size: 13px;
     text-transform: uppercase;
@@ -2707,7 +2718,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "neuzeit-grotesk";
+    font-family: var(--font3);
     font-weight: 600;
     color: #44566c;
 }
@@ -2723,7 +2734,7 @@ footer h6 {
 
 h1,h2,h3,h4,h5,h6, .h1_big{
 	color:#fff;	
-	font-family:"neuzeit-grotesk";
+	font-family:var(--font3);
 	margin:0;
 	padding:0;
 	font-weight:600;
@@ -2739,7 +2750,7 @@ h1 span {
 }
 
 h1.s2 {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 60px;
     font-weight: lighter !important;
     margin: 0 !important;
@@ -2765,7 +2776,7 @@ h1.ultra-big, .h1_ultra {
     font-size: 120px;
 	line-height:100px;
 	margin:0;
-	font-family:"neuzeit-grotesk";
+	font-family:var(--font3);
 	font-weight:bold;
 }
 .text-light h1.ultra-big, .text-light .h1_ultra{
@@ -2804,7 +2815,7 @@ h2.s1 {
 }
 
 h2.deco-text span {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     display: block;
     line-height: .85em;
     font-weight: lighter;
@@ -2852,13 +2863,13 @@ h3 {
 }
 
 h3.s3 {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 60px;
     font-weight: lighter !important;
 }
 
 h4.s3 {
-    font-family: "Open Sans";
+    font-family: var(--font4);
     font-weight: 300;
     font-size: 12px;
     letter-spacing: 15px;
@@ -2890,7 +2901,7 @@ h1.title strong {
 }
 
 h1.hs1 {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 96px;
     display: inline-block;
     -webkit-transform: rotate(-5deg);
@@ -2900,7 +2911,7 @@ h1.hs1 {
 }
 
 h1.hs2 {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 72px;
     display: inline-block;
     font-weight: lighter !important;
@@ -2911,7 +2922,7 @@ h2.subtitle {
 }
 
 h2.name {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     color: #fff;
     font-size: 84px;
     line-height: 50px;
@@ -2923,7 +2934,7 @@ h2.name span {
 }
 
 h2.name-s1 {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     color: #fff;
     font-size: 84px;
     font-weight: 700;
@@ -2937,14 +2948,14 @@ h2.name-s1 span {
 
 h2.hw {
     display: block;
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 48px;
     text-transform: none;
     font-weight: lighter;
 }
 
 h2.deco {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     text-align: center;
     font-weight: 600 !important;
     font-size: 20px;
@@ -2975,7 +2986,7 @@ h2.deco span:after {
 }
 
 h2.hs1 {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 40px;
 }
 
@@ -2991,7 +3002,7 @@ h2.hs1 span {
     font-size: 48px;
     position: relative;
     top: 10px;
-    font-family: "Miama";
+    font-family: var(--font5);
     margin: 0 15px 0 10px;
     font-weight: normal;
 }
@@ -3006,7 +3017,7 @@ h2 .de_dark .text-light h2 {
 }
 
 h2.s2 {
-    font-family: "Open Sans";
+    font-family: var(--font4);
     font-weight: 400;
 }
 
@@ -3026,7 +3037,7 @@ h4.title {
 }
 
 h5.s2 {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     letter-spacing: 1px;
     font-size: 14px;
 }
@@ -3042,18 +3053,18 @@ h4 {
 }
 
 h4.s2 {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 16px;
 }
 
 span.teaser {
-    font-family: "Georgia";
+    font-family: var(--font6);
     font-style: italic;
     font-size: 18px;
 }
 
 .wm {
-    font-family: "Miama";
+    font-family: var(--font5);
     font-size: 100px;
     font-weight: 100;
     position: absolute;
@@ -3067,7 +3078,7 @@ span.teaser {
 }
 
 .wm2 {
-    font-family: "Parisienne";
+    font-family: var(--font2);
     font-size: 30px;
     position: relative;
     width: 200%;
@@ -3112,7 +3123,7 @@ span.teaser {
 
 /* feature box style 1 */
 
-. {
+.feature-box {
     margin-top: 0px;
     overflow: hidden;
 }
@@ -3443,7 +3454,6 @@ span.teaser {
 }
 
 
-}
 .box-fx .inner {
     position: relative;
     overflow: hidden;
@@ -4070,7 +4080,7 @@ a:visited.accordion-toggle {
     padding: 30px 0 30px 0;
     border-radius: 120px;
     color: #222;
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 16px;
     -moz-border-radius: 120px;
     -webkit-border-radius: 120px;
@@ -4433,7 +4443,7 @@ a:visited.accordion-toggle {
     background: none;
     border: none;
     margin-top: 20px;
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -4716,7 +4726,7 @@ a:visited.accordion-toggle {
     border: solid 1px rgba(255, 255, 255, .2);
     padding: 10px 20px 10px 20px;
     margin: 5px;
-    font-family: "Montserrat";
+    font-family: var(--font1);
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -5602,11 +5612,11 @@ object {
 	vertical-align:middle;
 }
 .label {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: var(--font1);
 }
 
 .sm-info span{
-	font-family:"neuzeit-grotesk";
+	font-family:var(--font3);
 	color:#fff;
 	display:block;
 	font-size:14px;
@@ -5738,7 +5748,7 @@ blockquote.s2:before {
     color: #555;
     font-size: 16px;
     line-height: 20px;
-    font-family: "Montserrat", Arial, Helvetica, sans-serifr;
+    font-family: var(--font1)r;
     padding: 10px 20px 0px 60px;
     font-weight: 700;
     display: block;
@@ -7045,7 +7055,7 @@ section .color-overlay {
     margin-bottom: 60px;
 }
 .teaser-text {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 18px;
     color: rgba(255, 255, 255, .5);
     line-height: normal;
@@ -7203,7 +7213,7 @@ section.no-padding {
     margin: auto;
 }
 .teaser {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 16px;
     font-weight: 300;
 }
@@ -7247,7 +7257,7 @@ section.no-padding {
 .owl-arrow .next:before {
     font-family: "FontAwesome";
     content: '\f177';
-    color: #2;
+    color: #fff;
     padding: 20px;
     font-size: 32px;
     display: block;
@@ -7901,7 +7911,7 @@ a.read_more i {
     vertical-align: top;
 }
 a.btn-download{
-	font-family:"neuzeit-grotesk";
+	font-family:var(--font3);
 	font-size:14px;
 }
 a.btn-download:hover,
@@ -8101,7 +8111,7 @@ a.btn-download:hover i{
 }
 .de_review blockquote {
     border: none;
-    font-family: "Montserrat", Georgia, "Times New Roman", Times, serif;
+    font-family: var(--font1);
 }
 .de_review .de_nav li span {
     border: 1px solid #202220;
@@ -8224,7 +8234,7 @@ a.btn-download:hover i{
     letter-spacing: 6px;
 }
 .very-big-white {
-    font-family: "Montserrat";
+    font-family: var(--font1);
     font-size: 64px;
     color: #fff;
     margin: 0;
@@ -8496,14 +8506,14 @@ a.btn-slider:hover {
 .deco-big {
     display: block;
     font-size: 120px;
-    font-family: "Miama";
+    font-family: var(--font5);
     margin-top: 48px;
     margin-left: -20px;
 }
 .deco-md {
     display: block;
     font-size: 120px;
-    font-family: "Miama";
+    font-family: var(--font5);
     margin-top: 32px;
     margin-left: -20px;
 }
@@ -8595,7 +8605,7 @@ a.btn-slider:hover {
 
 .owl-dots button{
 	display:inline-block;
-	background:#ccccccs;
+	background:#cccccc;
 	border:none;
 	outline:none;
 	padding:0;
@@ -8612,7 +8622,7 @@ a.btn-slider:hover {
 
 blockquote.very-big {
     border: none;
-    font-family: "Montserrat";
+    font-family: var(--font1);
     text-align: center;
     border: none;
     font-size: 32px;
@@ -8621,7 +8631,7 @@ blockquote.very-big {
     font-style: normal;
 }
 blockquote.very-big span {
-    font-family: "Open Sans";
+    font-family: var(--font4);
 }
 a,
 img {

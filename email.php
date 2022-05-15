@@ -5,6 +5,7 @@ $emailTo = $_REQUEST['email'];
 
 $name = $_REQUEST['name'];
 $email = $_REQUEST['email'];
+$time = $_REQUEST['time'];
 $msg = $_REQUEST['message'];
 
 $email_from = $name.'<'.$email.'>';
@@ -16,6 +17,7 @@ $headers .= "Return-Path:"."From:" . $email;
 
 $message .= 'Name : ' . $name . "\n";
 $message .= 'Email : ' . $email . "\n";
+$message .= 'Time : ' . $time . "\n";
 $message .= 'Message : ' . $msg;
 
 if (@mail($to, $subject, $message, $email_from))
