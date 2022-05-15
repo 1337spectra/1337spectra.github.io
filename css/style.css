@@ -1,7 +1,7 @@
 /* ================================================== */
 
-/* Jonna
-/* created by designesia
+/* Gabrielle Decker
+/* Personal Website
 
 * body
 * header
@@ -86,7 +86,7 @@ html {
 }
 
 body {
-    font-family: "Ruda", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 400;
     background: top fixed;
@@ -265,7 +265,7 @@ header .logo-scroll {
 
 header .logo,
 header .logo-2 {
-    font-family: "Roboto Slab";
+    font-family: "Montserrat";
     color: #44566c;
     font-size: 40px;
     font-weight: 300;
@@ -9440,3 +9440,4 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
+}
