@@ -6593,6 +6593,9 @@ footer .widget_list li a {
 	opacity:0;
 	color:#ffffff;
 }
+.mask.s2 {
+	background-image:linear-gradient(to bottom,hsla(0,0%,0%,0) 0,hsla(0,0%,0%,.011) 8.1%,hsla(0,0%,0%,.044) 15.5%,hsla(0,0%,0%,.094) 22.5%,hsla(0,0%,0%,.158) 29%,hsla(0,0%,0%,.233) 35.3%,hsla(0,0%,0%,.317) 41.2%,hsla(0,0%,0%,.405) 47.1%,hsla(0,0%,0%,.495) 52.9%,hsla(0,0%,0%,.583) 58.8%,hsla(0,0%,0%,.667) 64.7%,hsla(0,0%,0%,.742) 71%,hsla(0,0%,0%,.806) 77.5%,hsla(0,0%,0%,.856) 84.5%,hsla(0,0%,0%,.889) 91.9%,hsla(0,0%,0%,.9) 100%)
+}
 .carousel-item {
 	width: 100%;
 }
