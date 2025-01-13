@@ -1,567 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Gabrielle Decker - Creative Technologist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Gabrielle Decker's portfolio, showcasing a creative blend of cutting-edge technology and captivating user experiences. Explore web applications, proof-of-concept penetration testing frameworks, and more, all demonstrating Gabrielle's passion for design, scripting, and cybersecurity.">
-    <meta name="author" content="Gabrielle Decker">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  <title>Gabrielle Decker - Creative Technologist</title>
+  <link rel="shortcut icon" href="favicon.ico">
 
-    
-    <!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
-    <!-- CSS Files
-    ================================================== -->
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.theme.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.transitions.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/coloring.css" type="text/css">
-    <link rel="stylesheet" href="https://use.typekit.net/lih5sne.css">
-
-    <!-- color scheme -->
-    <link rel="stylesheet" href="css/colors/pink.css" type="text/css">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c26bf0369b.js" crossorigin="anonymous"></script>
+  <!-- Google Font-->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,900italic,700italic%7COswald:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- Design Style -->
+  <link rel="stylesheet" type="text/css" href="css/scroll.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <!-- Portfolio Thumbnail / Slider -->
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <!-- Pie Chart / Skills -->
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <!-- Send Email -->
+  <script type="text/javascript" src="js/sendemail.js"></script>
+  <!-- Progressbar / Skills-->
+  <script type="text/javascript" src="js/progressbar.js"></script>
+  <!-- Portfolio-->
+  <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body id="homepage" class="homepage">
-    <div id="wrapper" class="fullwidth no-padding">
-        <div id="bg-overlay"></div>
-
-        <div id="main">
-            <!-- TOP BAR BEGIN -->
-            <div id="top-bar" class="transparent dark">
-                <div id="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="a" width="150" height="41" viewBox="0 0 1971.45 539.51">
-                        <defs>
-                          <style>.d{fill:#fff}</style>
-                        </defs>
-                        <path id="b" d="M674.49 253.48c-34.93 32.66-72.31 69.33-120.62 80.75-9.74 2.77-6.98-4.68-12.88-4.85-9.25 1.71-18.36 4.21-27.74 5.14-10.04.91-8.51-10.6-8.17-17.37-7.44 1.95-14 4.4-21.34 5.47-9.97 1.79-8.46-7.91-9.48-14.42-13.14 5.86-27.08 8.45-40.95 11.88-11.36 3.06-11.29-10.41-10.81-18.33-8.7-.72-18.72 2.62-23.83-8.93-10.11 11.24-59.6 56.05-62.94 21.43-16.29 15.66-33.34 30.68-50.49 45.42-2.85 2.35-7.79 4.43-8.91-.57-1.68-5.54-1.46-11.02 2.45-15.55 23.68-28.09 48.54-54.69 73.37-81.84-151.71 105.56-116.09 177.7-223.04 274.39-15.38 11.61-12.02-9.45-10.43-18.56 12.2-42 46.29-73.57 68.72-110.38 13.24-18.88 28.24-36.29 44.89-52.18 37.13-44.84 49.65-167.86 48.44-226.66-15.82 56.92-196.86 261.38-190.47 99.62-25.52 23.01-52.29 46.95-86.1 56.38-6.23 1.81-3.59-7.84-3.7-11.23.12-.89 1.86-2.18 2.92-2.25 28.36-4.42 49.48-27.16 71.2-44.14 7.43-7.6 19.31-12.39 21.39-23.75C118.88 132.27 179.66 31.3 249.68 1.03c10.15-3.24 15.45 1.3 16.08 11.65 1.79 73.12-112.77 157.96-163.83 205.05-9.69 17.73-6.18 65.16 25.01 55.53 43.28-17.41 73.06-56.07 107.36-86.09 22.61-21.19 35.5-49.48 44.3-78.63.41-2.76 2.58-4.46 4.26-6.5 10.19 9.61 4.47 58.03 5.15 74.1-4.16 51.73-13.42 103.36-30.34 152.27 10.75-9.11 110.26-110.39 114.67-89.64 4.96 15.94-9.27 27.63-17.17 39.69-.5.69-1.11 1.83-.87 2.43 4.23 10.56-.83 18.86-6.01 27.88 18.76-6.94 34.63-20.36 48.56-34.56 3.43-2.71 9.91-20.77 14.11-11 2.45 7.02 1.18 13.33-3.23 19.5 9.71 0 18.62-1.79 27.35-4.6 4.54-1.46 5.89-.8 6.93 3.96 1.48 6.73.29 12.85-4 18.86 15.56-3.56 30.12-10.84 44.91-16.73 11.73-4.62 8.16 11.35 8.55 18.46 17.66-4.42 29.51-15.1 27.83 12.45 6.87-1.75 14.17-3.68 21.22-5.44 6.47-1.55 7.29-1.17 10.43 4.94 52.08-14.12 96.31-52.17 129.75-93.27 5.68-20.38 11.68-40.98 17.39-61.42 3.97-6.46 22-110.79 27.18-67.94-1.05 39.05-4.6 78.04-20.65 114.05-4.34 13.14-16.15 22.74-17.75 36.87-22.89 88.19 56.55 12.77 79.07-14.69 2.27-2.61 5.78-12.11 9.26-5.72 5.7 11.67-5.07 22.63-8.7 33.11-2.8 8.37-7.09 16.82-8.44 25.46 12.47 37.95 58.15 17.36 82.22 3.14 15.89-10.03 15.61 17.72 42.9 15.77 39.18-.81 78.08-4.8 116.99-8.92 25.65-1.59 60.85-2.29 74.36 23.61-33.95-1.21-69.32-5.68-103.69 1.16-29.17 5.02-58.63 6.68-88.21 6.78-12.52.26-22.68-4.69-30.83-14.14-4.24-4.91-4.35-4.76-10.17-1.55-45.71 28.03-96.78 28.1-92.16-38.66-38.47 38.4-80.77 64.06-74.98-14.78ZM259.71 15.29C194.86 31.46 130.5 139.92 104.61 198.6l1.05.57c57.53-52.46 136.5-103.64 154.05-183.87ZM122.73 527.23c47.64-38.44 76.24-93.79 102.45-147.87-31.63 32.61-56.93 71.37-83.3 108.43-8.44 11.97-16.9 23.97-19.16 39.44h.01Zm579.74-344.32c5.94-14.76 10.78-30.04 12.27-46.19-4.09 15.4-8.18 30.8-12.27 46.19Z" class="d"/>
-                        <path id="c" d="M1116.51 47.09c15.62 92.97 21.42 187.77 27.03 281.37 9.16-79.74 6.02-160.52.08-240.45-.18-10.57-3.26-21.43.18-31.7l1.73-.02c11.75 93.66 17.68 192.33-.26 285.64-12.75 15.88-11.46-86.91-11.61-94.56-1.14-72.69-16-144.77-27.08-216.09-.13-9.91 20.03 1.13 26.19.73 87.65 1.25 340.65-9.74 205.49 135.63-100.83 102.93-203.91 204.14-295.31 315.69 47.39-33.25 94.6-66.83 143.39-98.01 42.39-22.39 89.35-35.27 133.71-53.36 1.64 3.15-.54 3.84-2.51 4.77-62.15 30.41-127.71 55.3-182.82 98.04-13.95 6.95-116.64 91.63-117.4 75.57-7.29-21.12 43.02-59.83 55.88-77.27 84.56-100.79 178.31-193 267.64-289.4 29.41-35 45.02-58.21-10.03-75.81-68.92-26.92-142.99-9.55-214.3-20.77Zm853.85 181.01c2.06 5.42 1.37 6.96-3.59 8.2-57.95 13.59-120.14 33.64-179.59 19.08-39.51-11.66-79.65 26.45-119.38-6.58-6-4.45-12.47-5.84-19.69-3.43-25.88 6.97-55.19 26.49-79.74 6.46-10.35-8.06-20.47 9.41-24.49-3.87-1.88-5.68-2.86-11.75-3.54-17.72-2.03-7.01 1.87-31.33-7.6-31.44-7.47 3.21-8.65 14.24-10.44 21.52-4.68 14.44-9.6 28.8-14.43 43.2-1.48 3.01-2.5 6.68-6.7 6.55-16.97-10.21 8.05-61.77 16.3-74.85 6.58-16.55 5.98-34.35 9.38-52.54-20.16 46.15-51.46 87.19-90.66 118.68-5.18 4.02-10.85 7.61-16.75 10.45-8.28 4-9.18 3.48-16.02-3.42-8.45 12.8-19.33 30.81-29.42 7.44-7.28 9.9-11.6 21.23-19.92 29.67-9.66-10.46 10.69-26.7 15.01-36.82 6.94-9.57 6.9-23 14.25-31.94 10.05 12.46-6.14 25.29-2.1 35.4 7.34 12.53 15.84-13.33 20.29-17.88 5.93-6.41 7.36 6.59 14.94 1.1 28.6-16.82 52.36-40.53 72.56-66.71 23.39-27.41 36.24-60.69 40.54-96.28 2.53-10.52-1.22-22.49 4.85-31.92 15.11 13.17-1.62 97.01-3.88 119.83 22.4 6.21 12.98 37.02 17.52 54.16 24.29-16.53 29.2 19.3 67.12 4.23 19.14-4.94 40-23.64 58.16-6.9 19.87 17.12 48.67 12.24 71.39 4.11 15.64-5.47 31.05-5.71 46.92-1.35 58.89 13.48 119.43-3.27 178.7-6.41v-.02Z" class="d"/>
-                    </svg>
-                </div>
-
-                <nav>
-                    <ul id="mainmenu">
-                        <li><a href="#section-home" class="active"><span>01</span>Home</a></li>
-                        <li><a href="#section-interests"><span>02</span>Interests</a></li>
-                        <li><a href="#section-experiences"><span>03</span>Experiences</a></li>
-                        <li><a href="#section-portfolio"><span>04</span>Portfolio</a></li>
-                        <!--<li><a href="#section-blog"><span>06</span>Blog</a></li>-->
-                        <li><a href="#section-contact"><span>05</span>Contact</a></li>
-                    </ul>
-                </nav>
-
-                <span id="menu-btn">
-                    <span class="lt"></span>
-                    <span class="lm"></span>
-                    <span class="lb"></span>
-                </span>
-
-                <div id="mp-col">
-                    <a href="Decker,Gabrielle-Resume2022_redacted.pdf" class="btn-download light">
-                        <span class="id-color"><i class="fa fa-file-pdf-o"></i></span>Download CV
-                    </a>
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
-            <!-- TOP BAR CLOSE -->
-
-            <!-- CONTENT BEGIN -->
-            <div id="content">
-                <div class="page-deco">gndecker@proton.me</div>
-
-                <div class="social-icons-fixed">
-                    <div class="sc-inner">
-                        <!--<a href="#"><i class="fa fa-facebook fa-lg"></i></a>-->
-                        <a href="https://github.com/1337spectra"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://codepen.io/gndecker"><i class="fa-brands fa-codepen"></i></a>
-                        <a href="https://www.linkedin.com/in/gabrielle-decker"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="#section-contact"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
-                </div>
-
-                <!-- section begin -->
-                <section id="section-home" aria-label="section" class="full-height no-top no-bottom text-light" data-bgimage="url(https://www.worldanvil.com/uploads/images/8f4a5d0cd000cc1d58523aab82ee2245.webp)">
-                    <div id="particles-js"></div>
-                    <div class="overlay-bg t50">
-                        <div class="middle">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 text-center">
-                                        <p class="lead"><span class="id-color">the portfolio of</span></p>
-                                        <div class="spacer20"></div>
-                                        <div class="h1_big">GabrielleDecker {
-                                            <br> 
-                                            <div class="typed-strings">
-                                                <p>student : </p>
-                                                <p>writer : </p>
-                                                <p>artist : </p>
-                                                <p>technologist : </p>
-                                                <p>coder : </p>
-                                            </div>
-                                            <div class="typed"></div>
-                                        </div>
-                                        <div class="spacer60"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="#section-interests" class="scroll-to">
-                        <span class="arrow bounce">
-                            <i class="arrow_down"></i>
-                        </span>
-                    </a>
-                </section>
-                <!-- section close -->
-
-                <!-- section begin -->
-                <section id="section-interests" class="fluid">
-                    <div class="container-fluid">
-                        <div class="row-fluid table">
-                            <div class="col-md-6 va-top">
-                                <div class="img-fx">
-                                    <img src="https://www.worldanvil.com/uploads/images/38272bd60519ee73444f413440327700.webp" alt="">
-                                    <div class="img-url"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="content-wrap">
-                                    <!-- service box begin -->
-                                    <div class="feature-box mb30">
-                                        <div class="inner">
-                                            <div class="text">
-                                                <i class="icon_lightbulb id-color"></i>
-                                                <h3>Design</h3>
-                                                As a hobbyist in web design, I enjoy creating visually appealing and user-friendly websites. I have experience using tools like Bootstrap and CSS to build responsive designs that look great on any device.
-                                            </div>
-                                            <i class="big icon_lightbulb id-color"></i>
-                                        </div>
-                                    </div>
-                                    <!-- service box close -->
-
-                                    <!-- service box begin -->
-                                    <div class="feature-box mb30">
-                                        <div class="inner">
-                                            <div class="text">
-                                                <i class="icon_key id-color"></i>
-                                                <h3>Penetration Testing</h3>
-                                                As a cybersecurity major, I have a strong interest in penetration testing and ethical hacking. I have experience using tools like Kali Linux and Metasploit to identify and exploit vulnerabilities in systems, as well as developing custom scripts to automate testing processes.
-                                            </div>
-                                            <i class="big icon_key id-color"></i>
-                                        </div>
-                                    </div>
-                                    <!-- service box close -->
-
-                                    <!-- service box begin -->
-                                    <div class="feature-box mb30">
-                                        <div class="inner">
-                                            <div class="text">
-                                                <i class="icon_pencil id-color"></i>
-                                                <h3>Creative Writing</h3>
-                                                In my free time, I enjoy writing fiction and exploring new worlds through storytelling. I have experience using platforms like World Anvil to develop detailed settings and characters, and I am always looking for new ways to improve my craft. Last year, I was honored to receive two awards from World Anvil: 'Best Plot of 2022' at World Ember and 'Best Worldbuilding Article of 2022' at the World Anvil Worldbuilding Awards.
-                                            </div>
-                                            <i class="big icon_pencil id-color"></i>
-                                        </div>
-                                    </div>
-                                    <!-- service box close -->
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </section>
-                <!-- section close -->
-
-                <!-- section begin -->
-                <section id="section-experiences" class="fluid">
-                    <div class="container-fluid">
-                        <div class="row-fluid table">
-                            <div class="col-md-6 va-top">
-                                <div class="img-fx">
-                                    <img src="https://www.worldanvil.com/uploads/images/e5f7b9ebe356f9a6432b90f723b89a10.webp" alt="">
-                                    <div class="img-url"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="content-wrap">
-                                    <p class="lead">
-                                        I am deeply committed to ongoing learning and skill development, engaging across multiple domains through initiatives like community presentations and designing automated pentesting frameworks. I collaborate on development, tutorials, and documentation for a large social platform's dev and community servers. I aim to open a pentesting business, leveraging my passion for design and scripting to develop innovative security solutions that enhance usability and user experience.
-                                    </p>
-
-                                    <div class="spacer30"></div>
-
-                                    <div class="de_tab tab_style_2">
-                                        <ul class="de_nav">
-                                            <li class="active">
-                                                <span>Experience</span>
-                                            </li>
-                                            <li>
-                                                <span>Education</span>
-                                            </li>
-                                        </ul>
-
-                                        <div class="de_tab_content text-left">
-                                            <div class="tab_single_content">
-                                                <div class="exp-box">
-                                                    <h5>2014 - 2015</h5>
-                                                    <h4>Habilitation Training Specialist</h4>
-                                                    <small>IJH, LLC</small>
-                                                    <ul>
-                                                        <li><b>Provided support</b> with daily living tasks, medication administration.</li>
-                                                        <li>Performed duties in accordance with <b>applicable standards</b>, policies, and regulatory guidelines to <b>promote a safe working environment.</b></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="exp-box">
-                                                    <h5>2011 - 2012</h5>
-                                                    <h4>Certified Nurse Aide</h4>
-                                                    <small>Grace Living Center</small>
-                                                    <ul>
-                                                        <li><b>Facilitated</b>b> personal hygiene management, feeding, and ambulation for <b>29 residents</b>.</li>
-                                                        <li><b>Monitored</b>b> and <b>reported</b>b> patient intake and output.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="tab_single_content">
-                                                <div class="exp-box">
-                                                    <h5>2021-2023</h5>
-                                                    <h4>AAS Computer Science - Cyber/Information Security</h4>
-                                                    <small>Oklahoma City Community College</small><br>
-                                                    <small>GPA: 3.951</small>
-                                                    <ul>
-                                                        <li>Graduated with <b>Honors</b> (Beginning Programming, Linux, Web Security, Network Defense)</li>
-                                                        <li><b>Member</b> of the Cyber Club</li>
-							<li>Competed in the <b>National Cyber League</b> for two seasons</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="exp-box">
-                                                    <h5>2023</h5>
-                                                    <h4>Certificate of Mastery Degree - Computer Networking Support</h4>
-                                                    <small>Oklahoma City Community College</small><br>
-                                                    <small>GPA: 4.0</small>
-                                                    <p>
-                                                        
-                                                    </p>
-                                                </div>
-                                                <div class="exp-box">
-                                                    <h5>2022</h5>
-                                                    <h4>Certificate of Mastery Degree - Computer Systems Support</h4>
-                                                    <small>Oklahoma City Community College</small><br>
-                                                    <small>GPA: 4.0</small>
-                                                    <p>
-                                                        
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </section>
-                <!-- section close -->
-
-                <!-- section begin -->
-                <section id="section-portfolio" aria-label="section-portfolio" class="fluid overwidth">
-                    <div class="container-fluid">
-                        <div id="album-carousel-2" class="owl-carousel owl-theme">
-                            <div class="carousel-item click" data-bgimage="url(https://www.worldanvil.com/uploads/images/02d1975f096ddea5262d8bdbba3177fa.webp)" data-url="portfolio-single-1.html">
-                                <div class="mask s2 full-height">
-                                    <div class="cover">
-                                        <div class="text">
-                                            <h2>World Anvil</h2>
-                                            <div class="tiny-border"></div>
-                                            <div class="clearfix"></div>
-                                            <p>Meticulously built with over 4,000 lines of CSS, Eivrall is the setting for my book "Electric Sanctuary". With no ability to use HTML, JS, or external libraries, as well as tight security restrictions, creating beautiful sites for World Anvil necessitates a great eye for detail and an in-depth understanding of CSS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item click" data-bgimage="url(https://raw.githubusercontent.com/1337spectra/rogue/143ec64bc83bf27a3f93913f4c6678358a5cfaeb/images/5.jpg)" data-url="portfolio-single-2.html">
-                                <div class="mask s2 full-height">
-                                    <div class="cover">
-                                        <div class="text">
-                                            <h2>Rogue.sh</h2>
-                                            <div class="tiny-border"></div>
-                                            <div class="clearfix"></div>
-                                            <p>"Rogue" is a powerful script that automates the pentesting process on Kali Linux. Written in Bash and Ruby, it scans target machines for vulnerabilities using Nmap, sets up the Metasploit environment, exploits vulnerabilities, gathers information, and escalates privileges. The script also downloads sensitive files and cracks credentials using John the Ripper.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item click" data-bgimage="url(https://www.worldanvil.com/uploads/images/bc1e40b25dba77446cb6501dfcadd06b.webp)" data-url="portfolio-single-3.html">
-                                <div class="mask s2 full-height">
-                                    <div class="cover">
-                                        <div class="text">
-                                            <h2>C++ IDE & Quiz</h2>
-                                            <div class="tiny-border"></div>
-                                            <div class="clearfix"></div>
-                                            <p>This project is an all-in-one web interface for C++ programming that includes a built-in C++ IDE and quiz feature. It is designed to provide a convenient way for students and beginners to learn and test their knowledge in C++. The IDE is integrated with the quiz feature to help users practice what they have learned.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item click" data-bgimage="url(https://www.worldanvil.com/uploads/images/32fcded46e12687c62121381287bab35.webp)" data-url="portfolio-single-4.html">
-                                <div class="mask s2 full-height">
-                                    <div class="cover">
-                                        <div class="text">
-                                            <h2>Cybersecurty 101 Booklet</h2>
-                                            <div class="tiny-border"></div>
-                                            <div class="clearfix"></div>
-                                            <p>This booklet provides an overview of essential cybersecurity concepts and practices for non-technical users. It covers topics such as password security, phishing, and online privacy. The booklet was created as an honors project and later presented to parents at a local elementary school.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item click" data-bgimage="url(https://images.squarespace-cdn.com/content/v1/5e13a4b584a68c775e362068/1594708345926-HC98NXPXQMS5ESYOBIFM/Social-Hero.png)" data-url="portfolio-single-5.html">
-                                <div class="mask s2 full-height">
-                                    <div class="cover">
-                                        <div class="text">
-                                            <h2>National Cyber League</h2>
-                                            <div class="tiny-border"></div>
-                                            <div class="clearfix"></div>
-                                            <p>Participated in the National Cyber League's 2022 Fall Season with a top national ranking of 627th out of 6,675 in the individual game, and 315th out of 3,926 in the team game. Utilized custom bash scripts to excel in network traffic analysis, password cracking, scanning & reconnaissance, and web application exploitation.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item click" data-bgimage="url(https://www.worldanvil.com/uploads/images/1124a963d60d972efad733fd1c3a408c.webp)" data-url="portfolio-single-6.html">
-                                <div class="mask s2 full-height">
-                                    <div class="cover">
-                                        <div class="text">
-                                            <h2>World Anvil Tools</h2>
-                                            <div class="tiny-border"></div>
-                                            <div class="clearfix"></div>
-                                            <p>A collection of helpful utilities for World Anvil users, including an HTML and BBCode converter and a JSON array formatter for use with the name generator feature. These tools are designed to streamline the content creation process and make it easier for authors to bring their worlds to life on the World Anvil platform.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pf-nav left"><i class="arrow_left"></i></div>
-                    <div class="pf-nav right"><i class="arrow_right"></i></div>
-                </section>
-                <!-- section close -->
-
-                <!-- section begin -->
-                <section id="section-blog" class="fluid">
-                    <div class="container-fluid">
-                        <div class="row-fluid table">
-                            <div class="col-md-6 va-top">
-                                <div class="img-fx">
-                                    <img src="images/misc/3.jpg" alt="">
-                                    <div class="img-url"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="content-wrap">
-
-                                    <div class="bloglist s1 item">
-                                        <div class="post-content">
-                                            <div class="date-box">
-                                                <div class="d">14</div>
-                                                <div class="m">MAY</div>
-                                            </div>
-                                            <div class="post-text">
-                                                <!--<h3><a href="blog-single.html">The Best Website Design of 2022</a></h3>-->
-                                                <h3><a href="#">Coming Soon!</a></h3>
-                                                <p>I'll get one up and running. Hopefully sooner, rather than later!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bloglist s1 item">
-                                        <div class="post-content">
-                                            <div class="date-box">
-                                                <div class="d">--</div>
-                                                <div class="m">---</div>
-                                            </div>
-                                            <div class="post-text">
-                                                <h3><a href="#">Placeholder Text</a></h3>
-                                                <p>Placeholder Text</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bloglist s1 item">
-                                        <div class="post-content">
-                                            <div class="date-box">
-                                                <div class="d">--</div>
-                                                <div class="m">---</div>
-                                            </div>
-                                            <div class="post-text">
-                                                <h3><a href="#">Placeholder Text</a></h3>
-                                                <p>Placeholder Text</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bloglist s1 item">
-                                        <div class="post-content">
-                                            <div class="date-box">
-                                                <div class="d">--</div>
-                                                <div class="m">---</div>
-                                            </div>
-                                            <div class="post-text">
-                                                <h3><a href="#">Placeholder Text</a></h3>
-                                                <p>Placeholder Text</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bloglist s1 item">
-                                        <div class="post-content">
-                                            <div class="date-box">
-                                                <div class="d">--</div>
-                                                <div class="m">---</div>
-                                            </div>
-                                            <div class="post-text">
-                                                <h3><a href="#">Placeholder Text</a></h3>
-                                                <p>Placeholder Text</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </section>
-                <!-- section close -->
-
-                <!-- section begin -->
-                <section id="section-contact" class="fluid">
-                    <div class="container-fluid">
-                        <div class="row-fluid table">
-                            <div class="col-md-6 va-top">
-                                <div class="img-fx">
-                                    <img src="https://www.worldanvil.com/uploads/images/58192dca7cf52b21c45c1370451caf17.webp" alt="">
-                                    <div class="img-url"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="content-wrap">
-                                    <div class="in-box">
-                                        <ul class="data">
-                                            <li>
-                                                <div>E-mail</div>
-                                                <div>gndecker@proton.me</div>
-                                            </li>
-                                            <li>
-                                                <div>Website</div>
-                                                <div>1337spectra.github.io</div>
-                                            </li>
-                                            <li>
-                                                <div>Location</div>
-                                                <div>Edmond, Oklahoma, US</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="spacer60"></div>
-
-                                    <h3>Send message</h3>
-                                    <div class="spacer20"></div>
-                                    <form name="contactForm" id='contact_form' class="form-transparent" method="post" action='email.php'>
-
-                                        <div class="field-set">
-                                            <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
-                                            <div class="line-fx"></div>
-                                        </div>
-
-                                        <div class="field-set">
-                                            <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
-                                            <div class="line-fx"></div>
-                                        </div>
-
-                                        <div class="field-set">
-                                            <input type='text' name='time' id='time' class="form-control" placeholder="Best Time to Contact You">
-                                            <div class="line-fx"></div>
-                                        </div>
-
-                                        <div class="field-set">
-                                            <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
-                                            <div class="line-fx"></div>
-                                        </div>
-
-                                        <div id='submit'>
-                                            <input type='submit' id='send_message' value='Send' class="btn btn-custom">
-                                        </div>
-                                        <div id='mail_success' class='success'>Your message has been sent successfully.
-                                        </div>
-                                        <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
-
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </section>
-                <!-- section close -->
-
-            </div>
-            <!-- CONTENT CLOSE -->
-        </div>
-
-        <div id="preloader">
-            <div class="s1">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+<body>
+<div id="container" class="container">
+  <!-- Left Menu / Logo-->
+  <aside class="menu" id="menu">
+    <div class="logo">
+      <!-- Logo image-->
+      <img src="images/logo.png" width="140" height="140" alt=""/>
+      <!-- Logo name-->
+      <span>Gabrielle Decker</span>
     </div>
+    <!-- Mobile Navigation-->
+    <a href="#menu1" class="menu-link"></a>
+    <!-- Left Navigation-->
+    <nav id="menu1" role="navigation">
+      <a href="#chapterintroduction"><span id="link_introduction" class="active">Home</span></a>
+      <a href="#chapterabout"><span id="link_about">About</span></a>
+      <a href="#chapterskills"><span id="link_skills">Skills</span></a>
+      <a href="#chapterexperience"><span id="link_experience">Experience</span></a>
+      <a href="#chaptereducation"><span id="link_education">Education</span></a>
+      <a href="#chapterportfolio"><span id="link_portfolio">Portfolio</span></a>
+      <a href="#chaptercontact"><span id="link_contact">Contact</span></a>
+    </nav>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/gabrielle-decker" target="_blank" class="linkedin" rel="noopener noreferrer" title="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/1337spectra" target="_blank" class="github" rel="noopener noreferrer" title="GitHub">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://codepen.io/gndecker" target="_blank" class="codepen" rel="noopener noreferrer" title="CodePen">
+        <i class="fa fa-codepen"></i>
+      </a>
+    </div>
+    <div class="copyright"> © Gabrielle Decker.<br>
+      All Rights Reserved. </div>
+  </aside>
+  <!-- Go to top link for mobile device -->
+  <a href="#menu" class="totop-link">Go to the top</a>
+  <div class="content-scroller">
+    <div class="content-wrapper">
 
-    <!-- Javascript Files
-    ================================================== -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/enquire.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.plugin.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/typed-custom.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/designesia.js"></script>
+      <!-- Introduction -->
+      <article class="content introduction noscroll" id="chapterintroduction">
+        <div class="inner">
+          <h2><span>Hello, I'm</span><br>
+            Gabrielle Decker</h2>
+          <span class="title">Cybersecurity Specialist / Creative Technologist</span> </div>
+        <div id="owl-demo" class="owl-carousel">
+          <div class="item"><img src="images/about.png" alt="" /></div>
+          <div class="item"><img src="images/about2.png" alt="" /></div>
+          <div class="item"><img src="images/about3.png" alt="" /></div>
+        </div>
+      </article>
+
+      <!-- About -->
+      <article class="content about white-bg" id="chapterabout">
+        <div class="inner">
+          <h2>About</h2>
+          <div class="title-divider"></div>
+          <div class="about-con">
+            <ul>
+              <li><b>Name:</b> Gabrielle Decker</li>
+              <li><b>Email:</b> <a href="mailto:gndecker@proton.me">gndecker@proton.me</a></li>
+              <li><b>Location:</b> Edmond, OK, USA</li>
+            </ul>
+            <h3>Hello!</h3>
+            <p>I am deeply committed to ongoing learning and skill development, engaging across multiple domains through initiatives like community presentations and open-source contributions. I aim to open a pentesting business, leveraging my passion for design and scripting to develop innovative security solutions that enhance usability and user experience.<br></p>
+            <p>My technical expertise includes Bash scripting, C++, HTML/CSS, and web development, with hands-on experience using tools such as Kali Linux, Wireshark, Metasploit, and Nmap. I hold the AWS Academy Cloud Foundations and Certified Linux Pro certifications, demonstrating proficiency in Linux system administration and cloud security practices. I earned my Associate of Applied Science in Computer Science (Cyber/Info Security focus) with a 3.951 GPA, achieving academic honors in subjects like Network Defense, Web Security, and Linux Administration.</p>
+            <p>As a cybersecurity specialist, my goal is to improve security by identifying vulnerabilities, mitigating risks, and implementing effective solutions to enhance organizational resilience against cyber threats. I am passionate about applying my technical expertise to contribute to the broader cybersecurity community.</p>
+            <a href="projects/(MASTER)DECKER, Gabrielle-Resume.pdf" class="button">Download resume (PDF)</a><br>
+            <img src="images/signature.png" class="signature" alt="" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Skills -->
+      <article class="content skills gray-bg" id="chapterskills">
+        <div class="inner">
+          <h2>Skills</h2>
+          <div class="title-divider"></div>
+          <h3>Technical Skills</h3>
+          <p>I am a cybersecurity student with a focus on penetration testing, network defense, and incident response. I have hands-on experience with tools like Kali Linux, Nmap, Metasploit, and Wireshark, gained through academic labs and National Cyber League competitions. My practical skills include vulnerability scanning, web exploitation, and threat analysis, supported by foundational knowledge of Bash scripting and operating systems.</p>
+          <div class="skills-con">
+            <div class="container-sub margin-top50">
+              <div class="row">
+                <div class="col-6 margin-bottom50">
+                  <div class="col-6"><span class="chart" data-percent="85"><span class="percent"></span> </span></div>
+                  <div class="col-6 chart-text">
+                    <h4>Kali Linux</h4>
+                    <p>Advanced</p>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50">
+                  <div class="col-6"><span class="chart" data-percent="85"><span class="percent"></span> </span></div>
+                  <div class="col-6 chart-text">
+                    <h4>Bash</h4>
+                    <p>Advanced</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="col-6"><span class="chart" data-percent="80"><span class="percent"></span> </span></div>
+                  <div class="col-6 chart-text">
+                    <h4>Nmap</h4>
+                    <p>Advanced</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="col-6"><span class="chart" data-percent="70"><span class="percent"></span> </span></div>
+                  <div class="col-6 chart-text">
+                    <h4>Wireshark</h4>
+                    <p>Intermediate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="full-divider"></div>
+            <div class="container-sub skill-list">
+              <div class="row">
+                <h3>Knowledge Areas</h3>
+                <p>I have practical experience in key cybersecurity domains, including cryptography, log analysis, enumeration, and exploitation, acquired through coursework, labs, and competitions. My skills span network traffic analysis, web application security, and digital forensics, allowing me to identify vulnerabilities and secure systems effectively. I continue to refine these areas through hands-on projects and continuous learning.</p>
+                <div class="col-4 margin-top10">
+                  <ul>
+                    <li>Enumeration & Exploitation</li>
+                    <li>Cryptography</li>
+                    <li>Log Analysis</li>
+                    <li>Network Traffic Analysis</li>
+                  </ul>
+                </div>
+                <div class="col-4 margin-top10">
+                  <ul>
+                    <li>Password Cracking</li>
+                    <li>Scanning & Reconnaissance</li>
+                    <li>RESTful API</li>
+                    <li>Phishing</li>
+                  </ul>
+                </div>
+                <div class="col-4 margin-top10">
+                  <ul>
+                    <li>Metasploit</li>
+                    <li>Git/GitHub/GitLab</li>
+                    <li>OSINT</li>
+                    <li>Web Application Exploitation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="full-divider"></div>
+            <div class="container-sub">
+              <div class="row">
+                <h3>General Skills</h3>
+                <p>I have practical knowledge in vulnerability assessments, penetration testing, and incident response. My hands-on work includes conducting scans, identifying risks, and applying remediation strategies. I am experienced in reconnaissance, exploitation, and crafting incident response plans, and I continuously improve these skills through competitions and academic projects.</p>
+                <div class="progressbar-main margin-top50">
+                  <div class="progress-bar-description"><b>Vulnerability Assessments</b> | Advanced</div>
+                  <div id="progressBar" class="progress">
+                    <div class="progress-value"></div>
+                  </div>
+                </div>
+                <div class="progressbar-main margin-top40">
+                  <div class="progress-bar-description"><b>Penetration Testing</b> | Advanced</div>
+                  <div id="progressBar2" class="progress">
+                    <div class="progress-value"></div>
+                  </div>
+                </div>
+                <div class="progressbar-main margin-top40">
+                  <div class="progress-bar-description"><b>Incident Response</b> | Intermediate</div>
+                  <div id="progressBar3" class="progress">
+                    <div class="progress-value"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Experience -->
+      <article class="content experience white-bg" id="chapterexperience">
+        <div class="inner">
+          <h2>Experience</h2>
+          <div class="title-divider"></div>
+          <h3>Cybersecurity Experience</h3>
+          <p>Hands-on cybersecurity experience through leadership roles, academic projects, and freelance work. Demonstrated expertise in penetration testing, vulnerability assessments, and incident response.</p>
+          <h3>Certifications</h3>
+          <div class="container-sub skill-list">
+            <ul>
+              <li><a href="https://www.credly.com/badges/a7af20da-f300-463d-b44c-f1d5f92a8267/linked_in_profile">AWS Academy Cloud Foundations</a>, <i>Amazon Web Services (Oct 2022)</i></li>
+              <li><a href="https://certification.testout.com/verifycert/6-1C6-X4C9J">Certified Linux Pro</a>, <i>TestOut Corporation (Jul 2022)</i></li>
+              <li><a href="https://www.credly.com/badges/2d4b658f-e654-4386-8402-ffdafba12144/linked_in_profile">Computer Support</a>, <i>Oklahoma State Regents for Higher Education (Jul 2022)</i></li>
+              <li><a href="https://www.ucertify.com/my/certificate.php?certificate_guid=xn92fu7z">CompTIA Strata IT Fundamentals (FC0-U61)</a>, <i>uCertify (May 2022)</i></li>
+            </ul>
+          </div>
+          <div class="experience-con">
+            <div class="container-sub">
+
+              <!-- NCL Team Captain -->
+              <div class="full-divider"></div>
+              <div class="experience-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fa fa-lock"></i></div>
+                  <div class="flot-left">
+                    <h5>Freelance</h5>
+                    <h4>Cybersec Specialist</h4>
+                    <span>Jan 2023 - Present</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Conducted vulnerability assessments for web applications and networks, targeting common issues like XSS, SQLi, and misconfigurations. Used Nmap and Wireshark for network scans to identify open ports and potential attack vectors. Created security awareness guides for small businesses on phishing prevention, password security, and MFA.
+                </div>
+              </div>
+
+              <!-- Cybersecurity Analyst (Academic Projects) -->
+              <div class="full-divider"></div>
+              <div class="experience-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fa fa-shield"></i></div>
+                  <div class="flot-left">
+                    <h5>National Cyber League</h5>
+                    <h4>Team Captain</h4>
+                    <span>Oct 2022 - Apr 2024</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Led a high-performing cybersecurity team in National Cyber League, ranking in the top 100 nationally. Specialized in Web Application Exploitation, Network Traffic Analysis, and Password Cracking, achieving top percentile scores. Managed reconnaissance, vulnerability exploitation, and post-game reporting. Received multiple NCL Challenge Coins for consistent top 500 national individual performance.
+                  <p class="margin-top20"><span>Scouting Reports</span></p>
+                  <div class="about-con margin-top10">
+                    <ul>
+                      <li><b>2024 Spring:</b> <a href="https://www.cyberskyline.com/report/KNTTWPV72MNL">Individual</a> | <a href="https://www.cyberskyline.com/report/3GUU0YTB5BRH">Team</a></li>
+                      <li><b>2023 Fall:</b> <a href="https://www.cyberskyline.com/report/6VCM5K4GB1CU">Individual</a> | <a href="https://www.cyberskyline.com/report/6JAF16A5B32Q">Team</a></li>
+                      <li><b>2023 Spring:</b> <a href="https://www.cyberskyline.com/report/FNCR6YJX6E7E">Individual</a> | <a href="https://www.cyberskyline.com/report/4J3XJWWTVNQ3">Team</a></li>
+                      <li><b>2022 Fall:</b> <a href="https://www.cyberskyline.com/report/HLEWW7K4PCLK">Individual</a> | <a href="https://www.cyberskyline.com/report/2C85ATB8QH1N">Team</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Freelance Cybersecurity Specialist -->
+              <div class="full-divider"></div>
+              <div class="experience-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fa fa-code"></i></div>
+                  <div class="flot-left">
+                    <h5>Okla. City Community Col.</h5>
+                    <h4>Academic Projects</h4>
+                    <span>Jan 2022 - May 2023</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Developed an Enterprise Security Management Plan covering incident response, disaster recovery, and business continuity. Created an Incident Response Plan per NIST SP 800-61, outlining containment, eradication, and post-incident steps. Conducted vulnerability assessments with tools like Wireshark, Nmap, and Metasploit.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Education -->
+      <article class="content education gray-bg" id="chaptereducation">
+        <div class="inner">
+          <h2>Education</h2>
+          <div class="title-divider"></div>
+          <h3>Academic Excellence</h3>
+          <p>A well-rounded education in Information Technology with a focus on Cybersecurity, supported by hands-on experience through academic projects and certifications.</p>
+          <div class="education-con">
+            <div class="container-sub">
+              <div class="full-divider"></div>
+              <!-- Education 1 -->
+              <div class="education-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fa fa-graduation-cap"></i></div>
+                  <div class="flot-left">
+                    <h5>Oklahoma State University<br>Institute of Technology</h5>
+                    <h4>Bachelor of Technology</h4>
+                    <span>Expected May 2026</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Currently pursuing a BTech in Information Technology with a focus on <b>Cyber Incident Response</b>.
+                </div>
+              </div>
+              <div class="full-divider"></div>
+              <!-- Education 2 -->
+              <div class="education-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fas fa-user-graduate"></i></div>
+                  <div class="flot-left">
+                    <h5>Okla. City Community Col.</h5>
+                    <h4>Associate of Applied Scien.</h4>
+                    <span>May 2023</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Earned an AAS in Computer Science with a focus on <b>Cyber/Info Security</b>. Graduated with a <b>3.951 GPA</b> and Academic Honors. Active member of the Cyber Club and involved in various academic projects focused on cybersecurity.
+                  <p class="margin-top20"><span>Honors & Awards</span></p>
+                  <div class="about-con margin-top10">
+                    <ul>
+                      <li><b>President's Honor Roll:</b> secured a 4.0 GPA</li>
+                      <li><b>Certificate of Achievement:</b> exceptional scholarship</li>
+                      <li><b>Presentation Award:</b> Scholarship from Dean of CS</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="full-divider"></div>
+              <!-- Education 3 -->
+              <div class="education-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fas fa-award"></i></div>
+                  <div class="flot-left">
+                    <h5>Okla. City Community Col.</h5>
+                    <h4>Certificate of Mastery</h4>
+                    <span>May 2023</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Earned a Certificate of Mastery Degree in Computer Networking Support with a <b>4.0 GPA</b>. The program focused on Network Configuration, Network Security, and Troubleshooting.
+                </div>
+              </div>
+              <div class="full-divider"></div>
+              <!-- Education 4 -->
+              <div class="education-details">
+                <div class="col-6 margin-bottom50 margin-top50">
+                  <div class="col-3 icon-block"><i class="fas fa-book-open"></i></div>
+                  <div class="flot-left">
+                    <h5>Okla. City Community Col.</h5>
+                    <h4>Certificate of Mastery</h4>
+                    <span>Dec 2022</span>
+                  </div>
+                </div>
+                <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                  Earned a Certificate of Mastery Degree in Computer Systems Support with a <b>4.0 GPA</b>. Focused on Hardware Installation, Maintenance, and Technical Support.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Portfolio -->
+      <article class="content portfolio white-bg" id="chapterportfolio">
+        <div class="inner">
+          <h2>Portfolio</h2>
+          <div class="title-divider"></div>
+          <div class="portfolio-con">
+            <div class="container-sub margin-top50">
+              <h3>Publications</h3>
+              <p>A curated selection of technical projects, tools, and cybersecurity-focused publications that highlight my practical experience in vulnerability assessments, penetration testing, and security education.</p>
+              <div class="container-sub skill-list">
+                <ul>
+                  <li><a href="https://journalrecord.com/sponsored_content/cybersecurity-awareness-month" target="_blank" rel="noopener">Cybersecurity Awareness Month</a>, <i>The Journal Record (Oct 2023)</i></li>
+                  <li><a href="https://journalrecord.com/sponsored_content/what-can-i-do-to-keep-myself-safe-online" target="_blank" rel="noopener">What Can I Do to Keep Myself Safe Online?</a>, <i>The Journal Record (Oct 2023)</i></li>
+                  <li><a href="https://journalrecord.com/sponsored_content/cybersecurity-career-paths-for-students" target="_blank" rel="noopener">Cybersecurity Career Paths for Students</a>, <i>The Journal Record (Oct 2023)</i></li>
+                </ul>
+              </div>
+              <div class="full-divider"></div>
+              <h3>Presentations</h3>
+              <h4>"Cybersecurity is Much More Than a Matter of IT"</h4>
+              <p><b>Event:</b> Organized by Putnam City Foundation & OCCC Department of Community Outreach and Education</p>
+              <p><span><b>Date:</b> January 26, 2023, Overholser Elementary School</span></p>
+              <p>Delivered an interactive presentation to 75 parents, covering cybersecurity basics, the role of social media in security, and practical tips and resources for keeping children safe online. Highlighted the risks associated with public Wi-Fi, online posting, and password storage, and emphasized the importance of identifying and reporting cyber incidents such as cyber-attacks and cyberbullying.</p>
+              <p>Read the newspaper article here: <a href="https://www.linkedin.com/posts/sara-mathew-04957b206_way-to-go-gabrielle-decker-what-an-awesome-activity-7036476418679058432-7FaA">"Cybersecurity is Much More Than a Matter of IT"</a></p>
+              <div class="full-divider"></div>
+              <h3>Featured Projects</h3>
+              <div class="row">
+                <div id="grid-gallery" class="grid-gallery">
+                  <section class="grid-wrap">
+                    <ul class="grid">
+                      <!-- Project 1: Rogue.sh -->
+                      <li>
+                        <figure>
+                          <img src="https://raw.githubusercontent.com/1337spectra/rogue/143ec64bc83bf27a3f93913f4c6678358a5cfaeb/images/5.jpg" alt="Rogue.sh Project"/>
+                          <figcaption>
+                            <div class="figcaption-details">
+                              <img src="images/icon-plus.png" height="82" width="82" alt=""/>
+                              <h3>Rogue.sh</h3>
+                              <span>Penetration Testing Automation Tool</span>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 2: C++ IDE & Quiz -->
+                      <li>
+                        <figure>
+                          <img src="https://www.worldanvil.com/uploads/images/bc1e40b25dba77446cb6501dfcadd06b.webp" alt="C++ IDE & Quiz"/>
+                          <figcaption>
+                            <div class="figcaption-details">
+                              <img src="images/icon-plus.png" height="82" width="82" alt=""/>
+                              <h3>C++ IDE & Quiz</h3>
+                              <span>Interactive Learning Platform</span>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 3: World Anvil API Documentation -->
+                      <li>
+                        <figure>
+                          <img src="images/worldanvil-api-swagger-documentation.png" alt="World Anvil API Documentation"/>
+                          <figcaption>
+                            <div class="figcaption-details">
+                              <img src="images/icon-plus.png" height="82" width="82" alt=""/>
+                              <h3>World Anvil API Documentation</h3>
+                              <span>API Documentation and Development</span>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 4: Enterprise Security Management Plan -->
+                      <li>
+                        <figure>
+                          <img src="images/Enterprise-Security-Management-Plan.png" alt="Enterprise Security Management Plan"/>
+                          <figcaption>
+                            <div class="figcaption-details">
+                              <img src="images/icon-plus.png" height="82" width="82" alt=""/>
+                              <h3>Enterprise Security Management Plan</h3>
+                              <span>Incident Response, Disaster Recovery, and Business Continuity Plan</span>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 5: Information Security Audit -->
+                      <li>
+                        <figure>
+                          <img src="images/Cybersecurity-Audit-Report.png" alt="Information Security Audit"/>
+                          <figcaption>
+                            <div class="figcaption-details">
+                              <img src="images/icon-plus.png" height="82" width="82" alt=""/>
+                              <h3>Information Security Audit</h3>
+                              <span>Cybersecurity Assessment and Recommendations</span>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 6: Cybersecurity Awareness Booklets -->
+                      <li>
+                        <figure>
+                          <img src="images/Cybersecurity-Booklets.png" alt="Cybersecurity Awareness Booklets"/>
+                          <figcaption>
+                            <div class="figcaption-details">
+                              <img src="images/icon-plus.png" height="82" width="82" alt=""/>
+                              <h3>Cybersecurity Awareness Booklets</h3>
+                              <span>Community Education Resources</span>
+                            </div>
+                          </figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+                  </section>
+                  <!-- Lightbox Popup -->
+                  <section class="slideshow">
+                    <ul>
+                      <!-- Project 1 Description -->
+                      <li>
+                        <figure>
+                          <figcaption>
+                            <h3>Rogue.sh</h3>
+                            <span>Penetration Testing Automation Tool</span>
+                            <p>"Rogue" is a script that automates the pentesting process on Kali Linux. Written in Bash and Ruby, it scans target machines for vulnerabilities using Nmap, sets up the Metasploit environment, exploits vulnerabilities, gathers information, and escalates privileges. The script also downloads sensitive files and cracks credentials using John the Ripper. The roadmap for development followed industry standards like PTES and referenced multiple penetration testing guides.</p>
+                            <p>Rogue.sh is publicly available on GitHub: <a href="https://github.com/1337spectra/rogue" target="_blank" rel="noopener">https://github.com/1337spectra/rogue</a></p>
+                          </figcaption>
+                          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YNRqINIU3Is?si=iMCS2vfVAy4yjD9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </figure>
+                      </li>
+                      <!-- Project 2 Description -->
+                      <li>
+                        <figure>
+                          <figcaption>
+                            <h3>C++ IDE & Quiz</h3>
+                            <span>Interactive Learning Platform</span>
+                            <p>An all-in-one web interface for C++ programming that includes a built-in C++ IDE and quiz feature. It is designed to provide a convenient way for students and beginners to learn and test their knowledge in C++. The IDE is integrated with the quiz feature to help users practice what they have learned.</p>
+                            <p>Available at: <a href="https://gabrielledecker.com/cpp-honors/" target="_blank" rel="noopener">https://gabrielledecker.com/cpp-honors</a></p>
+                          </figcaption>
+                          <img src="https://www.worldanvil.com/uploads/images/bc1e40b25dba77446cb6501dfcadd06b.webp" alt="C++ IDE & Quiz"/>
+                        </figure>
+                      </li>
+                      <!-- Project 3 Description -->
+                      <li>
+                        <figure>
+                          <figcaption>
+                            <h3>World Anvil API Documentation</h3>
+                            <span>API Documentation and Testing</span>
+                            <p>Collaborated with the World Anvil Development Team to create comprehensive API documentation for the World Anvil Public API using Swagger/OpenAPI standards. This documentation enables developers to integrate with the World Anvil platform, providing endpoints for creating, retrieving, updating, and deleting worldbuilding content.</p>
+                            <p>The documentation is publicly available at: <a href="https://www.worldanvil.com/api/external/boromir/swagger-documentation" target="_blank" rel="noopener">https://www.worldanvil.com/api/external/boromir/swagger-documentation</a></p>
+                          </figcaption>
+                          <img src="images/worldanvil-api-swagger-documentation.png" alt="World Anvil API Documentation"/>
+                        </figure>
+                      </li>
+                      <!-- Project 4 Description -->
+                      <li>
+                        <figure>
+                          <figcaption>
+                            <h3>Enterprise Security Management Plan</h3>
+                            <span>Incident Response, Disaster Recovery, and Business Continuity Plan</span>
+                            <p>Developed a comprehensive Enterprise Security Management Plan for ACME Corp, a fictional federal contractor managing multi-platform information systems across U.S. and EU government agencies. The plan was designed to mitigate cybersecurity threats and ensure operational resilience during disruptions by integrating an Incident Response Plan (IRP), Disaster Recovery Plan (DRP), and Business Continuity Plan (BCP). The project followed best practices outlined in NIST SP 800-61 and NIST SP 800-34, providing a structured approach to maintaining business operations in the face of cyber incidents and natural disasters.</p>
+                            <p>The Incident Response Plan outlined detection, containment, eradication, and post-incident activities to address potential security breaches and limit damage to the organization. The Disaster Recovery Plan included strategies for restoring critical systems using offsite backups, redundant systems, and failover protocols to minimize downtime. Additionally, the Business Continuity Plan provided detailed risk assessments and business impact analyses to prioritize essential operations and ensure continuous service delivery during emergencies.</p>
+                            <p>The project deliverables included a comprehensive plan document with appendices covering incident scenarios, team contact lists, system validation tests, and hardware/software inventories. This plan demonstrated proficiency in applying enterprise security management practices and implementing cybersecurity frameworks to protect organizational assets and ensure operational continuity.</p>
+                            <p>You can read the plan here: <a href="projects/Decker, Gabrielle - CS-2743-MW01F - Enterprise Security Management Plan.pdf">Enterprise Security Management Plan</a></p>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 5 Description -->
+                      <li>
+                        <figure>
+                          <figcaption>
+                            <h3>Information Security Audit</h3>
+                            <span>Cybersecurity Assessment and Recommendations</span>
+                            <p>Conducted an Information Security Audit for an institution to evaluate its physical, logical, and application-level security controls. The audit followed a comprehensive methodology to identify vulnerabilities and recommend actionable mitigations. The project was completed in collaboration with a team, adhering to industry best practices such as NIST Cybersecurity Framework (CSF) and ISACA's IT Assurance Framework (ITAF).</p>
+                            <p>The assessment identified potential attack vectors across physical security, network configuration, and publicly accessible systems. Specific findings included the need for stronger access controls, network segmentation, and security headers on public-facing websites. Using a combination of manual analysis and open-source tools, the audit highlighted areas for improvement in incident response planning, firewall configuration, and employee awareness of social engineering risks.</p>
+                            <p>The final report provided practical recommendations for enhancing the institution's security posture, including implementing a Web Application Firewall (WAF), improving password policies, and securing administrative interfaces. The project demonstrated proficiency in OSINT techniques, vulnerability detection, and security documentation.</p>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <!-- Project 5 Description -->
+                      <li>
+                        <figure>
+                          <figcaption>
+                            <h3>Cybersecurity Awareness Booklets</h3>
+                            <span>Community Education Resources</span>
+                            <p>Authored two Cybersecurity Awareness Booklets, designed to educate non-technical users about online safety, privacy protection, and cyber hygiene best practices. These booklets were distributed to students and staff at Oklahoma City Community College and are still being used by the Computer Science Department to promote cybersecurity awareness.</p>
+                            <p>The 2021 edition provided a beginner-friendly introduction to cybersecurity concepts such as using strong passwords, enabling multi-factor authentication, and avoiding phishing scams. The 2022 edition, created for Cybersecurity Awareness Month, aligned with the Cybersecurity and Infrastructure Security Agency's (CISA) campaign, expanding on topics like ransomware prevention, safe public Wi-Fi usage, and incident reporting.</p>
+                            <p>These booklets included step-by-step guides, infographics, and resource links to help individuals take actionable steps to secure their digital lives. The project demonstrated proficiency in technical writing, public communication, and cybersecurity education, and it was recognized by the institution for its positive impact on community awareness.</p>
+                            <p>Read the 2022 edition here: <a href="projects/2022 - Decker, Gabrielle - Cybersecurity Awareness Month.pdf">Cybersecurity Awareness Month</a></p>
+                            <p>Read the 2021 edition here: <a href="projects/2021 - Gabby's Cybersecurity Awareness Tips for Friends & Family.pdf">Gabby's Cybersecurity Tips for Friends & Family</a></p>
+                          </figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+                    <nav>
+                      <span class="fa nav-prev"></span>
+                      <span class="fa nav-next"></span>
+                      <span class="fa nav-close"></span>
+                    </nav>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Contact -->
+      <article class="content contact gray-bg" id="chaptercontact">
+        <div class="inner">
+          <h2>Contact</h2>
+          <div class="title-divider"></div>
+          <h3>Let's Connect</h3>
+          <div class="contact-con margin-top50">
+            <div class="container-sub">
+              <div class="row">
+                <div class="contact-details">
+                  <div class="col-6">
+                    <div class="contact-text">
+                      <div class="col-2 icon-block address"><i class="fa fa-map-marker"></i></div>
+                      <div class="flot-left">
+                        <strong>Gabrielle Decker</strong><br>
+                        Edmond, Oklahoma,<br>
+                        United States.
+                      </div>
+                    </div>
+                    <div class="contact-text">
+                      <div class="col-2 icon-block email"><i class="fa fa-envelope"></i></div>
+                      <div class="flot-left"> <strong>Email</strong><br>
+                        <a href="mailto:gndecker@proton.me">gndecker@proton.me</a> </div>
+                    </div>
+                  </div>
+                  <div class="col-6 m-margin-top30">
+                    <h3>I'm also on various platforms</h3>
+                    I don't really do social media, but you can connect with me on any of the following platforms:
+                    <div class="contact-social margin-top30">
+                      <a href="https://www.linkedin.com/in/gabrielle-decker" target="_blank" class="linkedin" rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                      <a href="https://github.com/1337spectra" target="_blank" class="github" rel="noopener noreferrer" title="GitHub">
+                        <i class="fa fa-github"></i>
+                      </a>
+                      <a href="https://codepen.io/gndecker" target="_blank" class="codepen" rel="noopener noreferrer" title="CodePen">
+                        <i class="fa fa-codepen"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="full-divider"></div>
+            <div class="container-sub">
+              <div class="row">
+                <div class="contact-form">
+                  <h3>Drop Me a Line</h3>
+                  <form id="form1" name="form1" method="post" >
+                    <input name="name" type="text" id="name" placeholder="Your Name..." />
+                    <input name="email" type="text" id="email" placeholder="Your Email..." />
+                    <textarea name="message" id="message" cols="45" rows="5" placeholder="Your Message..."></textarea>
+                    <input type="submit" name="button" id="button" value="say hello!" >
+                    <div id="successmsg" ></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Introduction -->
+      <article class="content introduction-end" id="chapterthankyou">
+        <div class="inner">
+          <div class="introduction-end-con margin-top50">
+            <h3><strong>Gabrielle Decker</strong></h3>
+            <div id="rotate" class="rotate">
+              <div><span>leader.</span></div>
+              <div><span>forward-thinking.</span></div>
+              <div><span>innovative.</span></div>
+              <div><span>determined.</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- content-wrapper -->
+  </div>
+  <!-- content-scroller -->
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/head.min.js"></script>
+<!-- Portfolio Thumbnail -->
+<script type="text/javascript" src="js/imagesloaded.min.js"></script>
+<script type="text/javascript" src="js/masonry.min.js"></script>
+<script type="text/javascript" src="js/class_helper.js"></script>
+<script type="text/javascript" src="js/grid_gallery.js"></script>
+<!-- Portfolio Grid -->
+<script>
+    new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+</script>
+<!-- Portfolio Slider-->
+<script type="text/javascript"  src="js/carousel.js"></script>
+<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+<script type="text/javascript" src="js/text.rotator.js"></script>
+<!-- Page Scrolling -->
+<script>
+head.js(
+		{ mousewheel : "js/jquery.mousewheel.js" },
+		{ mwheelIntent : "js/mwheelIntent.js" },
+		{ jScrollPane : "js/jquery.jscrollpane.min.js" },
+		{ history : "js/jquery.history.js" },
+		{ stringLib : "js/core.string.js" },
+		{ easing : "js/jquery.easing.1.3.js" },
+		{ smartresize : "js/jquery.smartresize.js" },
+		{ page : "js/jquery.page.js" }
+		);
+</script>
+<!-- Fit Video -->
+<script type="text/javascript"  src="js/jquery.fitvids.js"></script>
+<!-- All Javascript Component-->
+<script src="js/settings.js"></script>
 </body>
-
 </html>
